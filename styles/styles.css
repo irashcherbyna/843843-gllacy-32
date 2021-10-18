@@ -41,12 +41,26 @@ body {
   background-color: #FEAFC3;
 }
 
-button {
+.button {
+  width: 152px;
+  height: 44px;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #2D3440;
+  border-radius: 26px;
+}
+
+.input-field {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 14px 16px;
+  color: #B9B9B9;
+  background-color: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
 }
 
 .visually-hidden {
@@ -203,14 +217,10 @@ button {
 }
 
 .carousel__button {
-  display: block;
-  width: 139px;
-  height: 44px;
   margin-top: 48px;
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   border: 4px solid rgba(252, 252, 252, 0.4);
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-  border-radius: 26px;
 }
 
 .carousel__gallery {
@@ -316,6 +326,9 @@ button {
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+
+  /*Removed browser default styles */
+  margin: 0;
 }
 
 .offers {
@@ -323,15 +336,19 @@ button {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 56px;
+  margin-top: 56px;
 }
 
 .offer {
+  box-sizing: border-box;
   width: 570px;
   min-height: 268px;
   color: #2D3440;
   background-color: #FF7799;
   border-radius: 16px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
 }
 
 .offer_raspberry {
@@ -350,19 +367,24 @@ button {
   line-height: 30px;
   color: #2D3440;
 
+  /*Removed browser default styles */
   margin: 0;
-  padding-top: 40px;
-  padding-left: 40px;
 }
 
 .offer__conditions {
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  padding-left: 40px;
+  margin: 16px 0 0 0;
 }
 
 .offer__button {
-  margin-left: 40px;
+  background: #FCFCFC;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  color: #2D3440;
+  margin-top: 32px;
 }
 
 .bestsellers {
@@ -378,20 +400,22 @@ button {
 }
 
 .products {
-  padding: 0;
-  padding-top: 60px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  padding: 60px 0 0 0;
 }
 
 .product {
+  box-sizing: border-box;
   width: 270px;
   color: #2D3440;
   background: #FCFCFC;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .product__image-container {
@@ -410,11 +434,18 @@ button {
   filter: drop-shadow(0px 4px 12px rgba(45, 52, 64, 0.1));
 }
 
+.product__content-container {
+  width: 190px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .product__title {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
+  margin: 10px 0 0 0;
 }
 
 .product__description {
@@ -423,20 +454,30 @@ button {
   line-height: 22px;
   text-align: center;
   color: #565C66;
+  margin: 8px 0 20px 0;
+}
+
+.product__price-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .product__price {
+  display: block;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
+  margin: 0 0 28px 0;
 }
 
 .product__button {
+  display: block;
   width: 32px;
   height: 32px;
   background: #FF2F64 url("../images/icons/cart-catalog.svg") no-repeat 50% 50%;
   border-radius: 26px;
   border-style: none;
+  margin-left: auto;
 }
 
 .about-us {
@@ -456,29 +497,37 @@ button {
 .about-us__container {
   background: #FCFCFC;
   border-radius: 16px;
-  padding: 0 40px;
+  padding: 56px 40px;
 }
 
 .about-us__info {
+  display: block;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+
+  /*Removed browser default styles */
+  margin: 0;
 }
 
 .about-us__content {
+  margin-top: 56px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 40px 31px;
 }
 
 .about-us__paragraph {
-  display: block;
   width: 442px;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
   padding-left: 64px;
+
+  /*Removed browser default styles */
+  margin: 0;
 }
 
 .own-production-icon {
@@ -536,11 +585,12 @@ button {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-
+  text-decoration: none;
   color: #2D3440;
 }
 
 .subscribe {
+  box-sizing: border-box;
   width: 570px;
   display: flex;
   flex-direction: column;
@@ -555,6 +605,7 @@ button {
 .subscribe-container {
   box-sizing: border-box;
   width: 558px;
+  min-height: 208px;
   background: #FCFCFC;
   border-radius: 16px;
   padding: 26px;
@@ -567,23 +618,27 @@ button {
   color: #565C66;
 }
 
-.subscribe-form__input {
-  width: 332px;
-  height: 48px;
-  background-color: #FFFFFF;
-  border: 1px solid #B9B9B9;
-  border-radius: 4px;
-
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #B9B9B9;
+.subscribe-form {
+  width: 508px;
 }
 
+.subscribe-form__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.subscribe-form__input {
+  box-sizing: border-box;
+  width: 332px;
+  height: 48px;
+}
 
 .subscribe-form__button {
-
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .delivery {
@@ -611,14 +666,17 @@ button {
   font-size: 32px;
   line-height: 46px;
 
-  color: #2D3440;
+  /*Removed browser default styles */
+  margin: 0;
 }
 
 .delivery__text {
+  display: block;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
+  margin: 24px 0 0 0;
 }
 
 .delivery-form {
@@ -701,7 +759,6 @@ button {
 .contacts__container {
   box-sizing: border-box;
   width: 343px;
-  height: 364px;
   background: #FCFCFC;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
@@ -709,17 +766,20 @@ button {
 }
 
 .contacts__title {
+  display: block;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
+  margin: 0;
 }
 
 .contacts__address {
+  font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  color: #2D3440;
+  margin: 12px 0 0 0;
 }
 
 .contacts__info-phone {
@@ -727,20 +787,36 @@ button {
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
+  margin: 24px 0 0 0;
 }
 
 .contacts__phone {
+  display: block;
+  text-decoration: none;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
   color: #2D3440;
+  margin: 12px 0 0 0;
 }
 
 .contacts__working-hours {
+  display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: #565C66;
+  margin: 0;
+}
+
+.contacts__button {
+  width: 250px;
+  height: 56px;
+  color: #FCFCFC;
+  background: #FF2F64;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  margin: 32px 0 0 0;
 }
 
 .site-footer {

@@ -168,12 +168,12 @@
         <section class="offer offer_raspberry">
           <h3 class="offer__title">Малинка даром!</h3>
           <p class="offer__conditions">При покупке 2 кг любого фруктового<br> мороженого, добавим в ваш заказ<br> банку малинового варенья бесплатно.</p>
-          <button class="offer__button" type="button">Хочу подарок</button>
+          <button class="offer__button button" type="button">Хочу подарок</button>
         </section>
         <section class="offer offer_marshmallow">
           <h3 class="offer__title">Маршмеллоу даром!</h3>
           <p class="offer__conditions">При покупке 2 кг пломбира, добавим<br> в ваш заказ упаковку нежных<br> зефирок совершенно бесплатно.</p>
-          <button class="offer__button" type="button">Хочу подарок</button>
+          <button class="offer__button button" type="button">Хочу подарок</button>
         </section>
       </div>
     </section>
@@ -185,53 +185,67 @@
           <div class="product__image-container">
             <img class="product__image" src="images/products/raspberry.jpg" width="270" height="184" alt="Мороженое 'Малинка'">
           </div>
-          <h3 class="product__title">Малинка</h3>
-          <p class="product__description">Сливочное мороженое с малиновым джемом</p>
-          <b class="product__price">310 ₽/
-            <span class="product__weight">кг</span>
-          </b>
-          <button class="product__button" title="Добавить в корзину">
-            <span class="visually-hidden">Купить</span>
-          </button>
+          <div class="product__content-container">
+            <h3 class="product__title">Малинка</h3>
+            <p class="product__description">Сливочное мороженое с малиновым джемом</p>
+            <div class="product__price-container">
+              <b class="product__price">310 ₽/<span class="product__weight">кг</span></b>
+              <button class="product__button" title="Добавить в корзину">
+                <span class="visually-hidden">Купить</span>
+              </button>
+            </div>
+          </div>
         </li>
         <li class="product">
           <div class="product__image-container">
             <img class="product__image" src="images/products/pistachio.jpg" width="270" height="184" alt="Мороженое 'Фисташка'">
           </div>
-          <h3 class="product__title">Фисташка</h3>
-          <p class="product__description">Фисташковый пломбир с кусочками шоколада</p>
-          <b class="product__price">340 ₽/
-            <span class="product__weight">кг</span>
-          </b>
-          <button class="product__button" title="Добавить в корзину">
-            <span class="visually-hidden">Купить</span>
-          </button>
+          <div class="product__content-container">
+            <h3 class="product__title">Фисташка</h3>
+            <p class="product__description">Фисташковый пломбир с кусочками шоколада</p>
+            <div class="product__price-container">
+              <b class="product__price">340 ₽/
+                <span class="product__weight">кг</span>
+              </b>
+              <button class="product__button" title="Добавить в корзину">
+                <span class="visually-hidden">Купить</span>
+              </button>
+            </div>
+          </div>
         </li>
         <li class="product">
           <div class="product__image-container">
             <img class="product__image" src="images/products/blueberry.jpg" width="270" height="184" alt="Мороженое 'Черника'">
           </div>
-          <h3 class="product__title">Черника</h3>
-          <p class="product__description">Крем-брюле с черничным джемом</p>
-          <b class="product__price">330 ₽/
-            <span class="product__weight">кг</span>
-          </b>
-          <button class="product__button" title="Добавить в корзину">
-            <span class="visually-hidden">Купить</span>
-          </button>
+          <div class="product__content-container">
+            <h3 class="product__title">Черника</h3>
+            <p class="product__description">Крем-брюле с черничным джемом</p>
+            <div class="product__price-container">
+              <b class="product__price">330 ₽/
+                <span class="product__weight">кг</span>
+              </b>
+              <button class="product__button" title="Добавить в корзину">
+                <span class="visually-hidden">Купить</span>
+              </button>
+              </div>
+            </div>
         </li>
         <li class="product">
           <div class="product__image-container">
             <img class="product__image" src="images/products/bubble-gum.jpg" width="270" height="184" alt="Мороженое 'Бабл-гам'">
           </div>
-          <h3 class="product__title">Бабл-гам</h3>
-          <p class="product__description">Ванильный пломбир со сладкой посыпкой</p>
-          <b class="product__price">320 ₽/
-            <span class="product__weight">кг</span>
-          </b>
-          <button class="product__button" title="Добавить в корзину">
-            <span class="visually-hidden">Купить</span>
-          </button>
+          <div class="product__content-container">
+            <h3 class="product__title">Бабл-гам</h3>
+            <p class="product__description">Ванильный пломбир со сладкой посыпкой</p>
+            <div class="product__price-container">
+              <b class="product__price">320 ₽/
+                <span class="product__weight">кг</span>
+              </b>
+              <button class="product__button" title="Добавить в корзину">
+                <span class="visually-hidden">Купить</span>
+              </button>
+            </div>
+          </div>
         </li>
       </ol>
     </section>
@@ -240,11 +254,6 @@
       <div class="about-us__container">
         <p class="about-us__info">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</p>
         <div class="about-us__content">
-          <p class="about-us__paragraph own-production-icon">Все наше мороженое изгатавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-          <p class="about-us__paragraph quality-ingredients-icon">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
-          <p class="about-us__paragraph proven-partners-icon">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
-          <p class="about-us__paragraph special-delivery-icon">Доставка нашего мороженого осуществляется в специальном термопаке, который не дает мороженому растаять и позволяет сохранить превосходный вкус.</p>
-
           <p class="about-us__paragraph own-production-icon">Все наше мороженое изгатавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
           <p class="about-us__paragraph quality-ingredients-icon">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
           <p class="about-us__paragraph proven-partners-icon">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
@@ -265,8 +274,10 @@
             <label class="subscribe-form__label" for="email">
               <span class="visually-hidden">Электронный адрес</span>
             </label>
-            <input class="subscribe-form__input" type="email" name="email" id="email" placeholder="email@example.com">
-            <input class="subscribe-form__button" type="submit" value="Отправить">
+            <div class="subscribe-form__container">
+              <input class="subscribe-form__input input-field" type="email" name="email" id="email" placeholder="email@example.com">
+              <input class="button subscribe-form__button" type="submit" value="Отправить">
+            </div>
           </form>
         </div>
       </section>
@@ -286,11 +297,11 @@
                 <span class="visually-hidden">Дополнительная информация</span>
               </button>
             </label>
-            <input class="delivery-form__input" type="date" id="date" name="date" placeholder="01.04.2020">
+            <input class="input-field delivery-form__input" type="date" id="date" name="date" placeholder="01.04.2020">
           </div>
           <div class="delivery-form__item">
             <label class="delivery-form__label" for="phone">Телефон</label>
-            <input class="delivery-form__input" type="tel" id="phone" name="phone" placeholder="+7 800 999-00-00">
+            <input class="input-field delivery-form__input" type="tel" id="phone" name="phone" placeholder="+7 800 999-00-00">
           </div>
         </div>
         <div class="delivery-form__item">
@@ -299,20 +310,20 @@
               <span class="visually-hidden">Дополнительная информация</span>
             </button>
           </label>
-          <input class="delivery-form__input" type="date" id="address" name="date" placeholder="ул.Большая Конюшенная, 19/8">
+          <input class="input-field delivery-form__input" type="date" id="address" name="date" placeholder="ул.Большая Конюшенная, 19/8">
         </div>
-        <input class="delivery-form__button" type="submit" value="Отправить">
+        <input class="button delivery-form__button" type="submit" value="Отправить">
       </form>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__container">
-        <p class="contacts__title">Адрес главного офиса и офлайн-магазина:</p>
+        <p class="contacts__title">Адрес главного офиса <br> и офлайн-магазина:</p>
         <address class="contacts__address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</address>
         <p class="contacts__info-phone">Для заказов по телефону:</p>
         <a class="contacts__phone" href="tel:+78128121212"><b>+7 (812) 812-12-12</b></a>
         <p class="contacts__working-hours">(с 10 до 20 ежедневно)</p>
-        <button class="contacts__button" type="button">Форма обратной связи</button>
+        <button class="contacts__button button" type="button">Форма обратной связи</button>
       </div>
     </section>
   </div>
