@@ -122,6 +122,12 @@ body {
   padding: 8px 16px;
 }
 
+.active {
+  color: #FCFCFC;
+  background: #FF4A78;
+  border-radius: 26px;
+}
+
 .navigation__list {
   margin: 0;
   padding: 0;
@@ -405,7 +411,9 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  padding: 60px 0 0 0;
+
+  /*Removed browser default styles */
+  padding: 0;
 }
 
 .product {
@@ -416,6 +424,7 @@ body {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  margin: 91px 0 0 0;
 }
 
 .product__image-container {
@@ -460,10 +469,10 @@ body {
 .product__price-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .product__price {
-  display: block;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
@@ -471,13 +480,11 @@ body {
 }
 
 .product__button {
-  display: block;
   width: 32px;
   height: 32px;
   background: #FF2F64 url("../images/icons/cart-catalog.svg") no-repeat 50% 50%;
   border-radius: 26px;
   border-style: none;
-  margin-left: auto;
 }
 
 .about-us {
@@ -1016,15 +1023,30 @@ body {
 }
 
 .pagination {
-  margin: 0;
-  padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+
+  /*Removed browser default styles */
+  margin: 0;
 }
 
 .pagination__item {
-  padding: 0 16px;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.pagination__link {
+  width: 10px;
+  display: block;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+  margin: 2px auto;
 }
 
 .pagination__item:first-child {
@@ -1035,12 +1057,33 @@ body {
   padding-right: 0;
 }
 
-.pagination__link {
-  text-decoration: none;
+.pagination_arrow {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.pagination_prev {
+  width: 8px;
+  height: 24px;
+  display: block;
+  margin-right: auto;
+}
+
+.pagination_next {
+  width: 8px;
+  height: 24px;
+  display: block;
+  margin-left: auto;
+}
+
+.pagination_current {
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: #2D3440;
+  background: #FCFCFC;
+  border-radius: 50%;
 }
 
 .catalog-navigation_focused > a {
